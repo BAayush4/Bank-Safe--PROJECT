@@ -1,4 +1,4 @@
-<h2>Customer List</h2>
+<!-- <h2>Customer List</h2>
 
 <div *ngIf="customers.length > 0; else noData">
   <div
@@ -17,4 +17,16 @@
 
 <ng-template #noData>
   <p>No customer data available.</p>
-</ng-template>
+</ng-template> -->
+
+<div *ngFor="let customer of customers">
+    <p>
+      {{ customer.customerId }}
+      {{ customer.name }}
+      {{ customer.email }}
+      {{customer.password}}
+      {{customer.username}}
+      {{customer.role}}
+     
+    </p>
+  </div>
